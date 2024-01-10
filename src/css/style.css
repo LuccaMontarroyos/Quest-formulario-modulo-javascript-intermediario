@@ -1,0 +1,139 @@
+main {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    background-image: url(../bg-repeat.jpg);
+    background-size: contain;
+    justify-content: center;
+    gap: 250px;
+}
+
+main, #user-message {
+    font-family: 'Roboto', sans-serif;
+}
+
+.texto {
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 430px;
+    gap: 15px;
+}
+
+.slogan {
+    font-size: 30px;
+    font-weight: 900;
+}
+
+.paragrafo {
+    font-size: 22px;
+    font-weight: 400;
+}
+
+.formulario {
+    background-color: #fff;
+    height: 90%;
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 40px;
+}
+
+.input-text{
+    width: 80%;
+    height: 50px;
+    border-radius: 5px;
+    font-size: 18px;
+    padding-left: 10px;
+    font-weight: 700;
+}
+
+.unfilled {
+    border: 2px solid #F52E2E;
+}
+
+.filled {
+    border: 2px solid #00C22B;
+}
+
+#user-message {
+    height: 140px;
+    padding-top: 10px;
+    position: relative;
+    resize: none;
+    border-width: 2px;
+}
+
+.warning {
+    color: #F52E2E;
+    align-self: flex-start;
+    font-size: 10px;
+    display: none;
+    padding-left: 75px;
+}
+
+.warning-message {
+    display: block;
+}
+
+.btn-envio {
+    background-color: #3CCC87;
+    color: #fff;
+    width: 80%;
+    height: 60px;
+    border-radius: 5px;
+    border: none;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.btn-envio:hover{
+    cursor: pointer;
+}
+
+.aviso {
+    font-weight: 400;
+    font-size: 18px;
+    margin-right: 450px;
+}
+
+
+@media (max-width: 770px) {
+    main {
+        flex-direction: column;
+        height: 100%;
+        gap: 100px;
+    }
+
+    .aviso {
+        margin-right: 0;
+    }
+
+    .warning {
+        padding-left: 0;
+        align-self: center;
+    }
+
+    .formulario {
+        width: 70%;
+        margin-bottom: 50px;
+        padding-bottom: 20px;
+    }
+
+    .texto {
+        padding-top: 300px;
+    }
+
+}
+
+@media (max-width: 375px) {
+    .formulario {
+        width: 95%;
+    }
+
+    .texto {
+        text-align: center;
+    }
+}
